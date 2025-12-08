@@ -78,49 +78,45 @@
       <self_collide>false</self_collide>
     </model>
     <include>
-      <uri>file:///home/asmar/gazebo_models/LitterBin</uri>
-      <name>LitterBin</name>
-      <pose>3.9582744548594153 -3.9721188454027208 0 0 0 0</pose>
-    </include>
-    <include>
-      <uri>file:///home/asmar/gazebo_models/aws_robomaker_warehouse_ClutteringC_01</uri>
-      <name>aws_robomaker_warehouse_ClutteringC_01</name>
-      <pose>-1.1678254250908982 0.11647680451324947 0 0 0 0</pose>
-    </include>
-    <include>
       <uri>file:///home/asmar/gazebo_models/brick_box_3x1x3</uri>
       <name>brick_box_3x1x3</name>
       <pose>-0.5910934474239351 4.9313380762175445 0 0 0 0</pose>
     </include>
     <include>
-      <uri>file://<urdf-string></uri>
-      <name>mogi_bot</name>
-      <pose>2.5000000064473324 1.4999335648206784 0.099999440038998258 -4.8232003387409903e-10 0.00066435892329926212 -1.5707000000169027</pose>
+      <uri>file:///home/asmar/gazebo_models/brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_0</name>
+      <pose>2.6666111475691654 4.8302343770614558 0 0 0 0</pose>
     </include>
     <include>
-      <uri>file:///home/asmar/gazebo_models/aruco_box</uri>
-      <name>aruco_box</name>
-      <pose>3.8545498847961426 -0.14071699976921082 0.24999990141499537 1.4446549964800098e-19 5.5214137489411973e-17 2.5357930474490029e-19</pose>
+      <uri>file:///home/asmar/gazebo_models/rescue_randy</uri>
+      <name>rescue_randy</name>
+      <pose>1.5776795095953009 3.6022001529965531 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>file:///home/asmar/gazebo_models/aruco_box3</uri>
+      <name>aruco_box3</name>
+      <pose>0.72528847158345533 1.9918505070372672 0.24999921343504655 -0.072477735754357384 1.5707934033936586 -0.55910956256916677</pose>
     </include>
     <include>
-      <uri>file:///home/asmar/gazebo_models/aruco_box</uri>
-      <name>aruco_box_0</name>
-      <pose>2.0167000293731689 -0.13312199711799622 0.24999960770788635 5.6926506624782548e-17 5.210078446343339e-17 2.6134336998820385e-19</pose>
+      <uri>file:///home/asmar/gazebo_models/aruco_box4</uri>
+      <name>aruco_box4</name>
+      <pose>3.4044969081878662 -1.0823526382446289 0.24999901156305956 9.1541910691384752e-18 -3.8362629385103968e-17 2.0225401639450986</pose>
     </include>
     <include>
-      <uri>file:///home/asmar/gazebo_models/aruco_box</uri>
-      <name>aruco_box_1</name>
-      <pose>0.87492400407791138 1.4921000003814697 0.2499991679947921 2.7827540184966694e-17 2.7582993826731696e-17 3.8110559789177868e-20</pose>
+      <uri>file:///home/asmar/gazebo_models/aruco_box1</uri>
+      <name>aruco_box1</name>
+      <pose>2.6844999790192356 2.9321398755387751 0.2499993066060659 8.0553444022835039e-07 -2.7879660481638761e-11 -2.645489871724459e-07</pose>
     </include>
     <include>
-      <uri>file:///home/asmar/gazebo_models/aruco_box</uri>
-      <name>aruco_box_2</name>
-      <pose>2.4301800727844238 2.8726599216461182 0.24999914962567182 3.080094526475026e-17 2.3618099097749571e-17 1.0485345932572971e-19</pose>
+      <uri>file:///home/asmar/gazebo_models/aruco_box2</uri>
+      <name>aruco_box2</name>
+      <pose>4.5637645721435547 1.2106193304061892 0.24999999995712521 -2.2652092445744133e-17 -3.2238560886343e-17 1.5953502891205253</pose>
     </include>
     <include>
-      <uri>file:///home/asmar/gazebo_models/aruco_box</uri>
-      <name>aruco_box_3</name>
-      <pose>4.0420699119567871 2.2300400733947754 0.24999915035667369 3.1132689468982925e-17 2.4146714626910612e-17 7.8817996332381771e-20</pose>
+      <uri>file:///home/asmar/gazebo_models/aruco_box5</uri>
+      <name>aruco_box5</name>
+      <pose>1.26033039566924 -0.37163250162541323 0.24999919734814685 1.5707933724403291 2.4293401124087193e-07 -0.54783376894256264</pose>
     </include>
     <light name='sun' type='directional'>
       <pose>0 0 10 0 0 0</pose>

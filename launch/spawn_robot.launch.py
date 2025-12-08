@@ -9,8 +9,8 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
 
-    pkg_bme_gazebo_sensors = get_package_share_directory('bme_gazebo_sensors')
-    pkg_erl1 = get_package_share_directory('erl1')
+    pkg_bme_gazebo_sensors = get_package_share_directory('assign1')
+
 
     gazebo_models_path, ignore_last_dir = os.path.split(pkg_bme_gazebo_sensors)
     os.environ["GZ_SIM_RESOURCE_PATH"] += os.pathsep + gazebo_models_path
@@ -26,7 +26,7 @@ def generate_launch_description():
     )
 
     world_arg = DeclareLaunchArgument(
-        'world', default_value='my_world.sdf',
+        'world', default_value='assignment1.sdf',
         description='Name of the Gazebo world file to load'
     )
 
@@ -64,7 +64,7 @@ def generate_launch_description():
 
     world_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(pkg_erl1, 'launch', 'my_launch.py'),
+            os.path.join(pkg_bme_gazebo_sensors, 'launch', 'my_launch.py'),
         ),
         launch_arguments={
         'world': LaunchConfiguration('world'),
@@ -113,8 +113,8 @@ def generate_launch_description():
             "/navsat@sensor_msgs/msg/NavSatFix@gz.msgs.NavSat",
             "/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan",
             "/scan/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked",
-            "/camera/depth_image@sensor_msgs/msg/Image@gz.msgs.Image",
-            "/camera/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked"
+            #"/camera/depth_image@sensor_msgs/msg/Image@gz.msgs.Image",
+            #"/camera/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked"
 
         ],
         output="screen",
@@ -164,7 +164,21 @@ def generate_launch_description():
         )
 
 
+# Node to forward /camera/camera_info to /aruco_tracker/camera_info
+    camera_info_forwarder = Node(
+        package='topic_tools', # Or a simple Python script if topic_tools is unavailable
+        executable='relay',
+        arguments=[
+            '/camera/camera_info',
+            '/aruco_tracker/camera_info',
+            'sensor_msgs/msg/CameraInfo' 
+        ],
+        name='camera_info_relay',
+        output='screen'
+    )
 
+    # ... then add this action to your launch description:
+    
 
 
     launchDescriptionObject = LaunchDescription()
@@ -183,6 +197,7 @@ def generate_launch_description():
     launchDescriptionObject.add_action(gz_bridge_node)
     launchDescriptionObject.add_action(robot_state_publisher_node)
     launchDescriptionObject.add_action(ekf_node)    
-    launchDescriptionObject.add_action(gz_image_bridge_node)
+    launchDescriptionObject.add_action(camera_info_forwarder)
+    #launchDescriptionObject.add_action(gz_image_bridge_node)
 
     return launchDescriptionObject

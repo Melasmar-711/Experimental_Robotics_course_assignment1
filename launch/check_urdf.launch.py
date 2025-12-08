@@ -7,7 +7,7 @@ from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
     
-    pkg_bme_gazebo_sensors = FindPackageShare('bme_gazebo_sensors')
+    pkg_bme_gazebo_sensors = FindPackageShare('assign1')
     default_rviz_config_path = PathJoinSubstitution([pkg_bme_gazebo_sensors, 'rviz', 'urdf.rviz'])
 
     # Show joint state publisher GUI for joints
@@ -29,7 +29,7 @@ def generate_launch_description():
     urdf = IncludeLaunchDescription(
         PathJoinSubstitution([FindPackageShare('urdf_launch'), 'launch', 'display.launch.py']),
         launch_arguments={
-            'urdf_package': 'bme_gazebo_sensors',
+            'urdf_package': 'assign1',
             'urdf_package_path': PathJoinSubstitution(['urdf', LaunchConfiguration('model')]),
             'rviz_config': LaunchConfiguration('rvizconfig'),
             'jsp_gui': LaunchConfiguration('gui')}.items()

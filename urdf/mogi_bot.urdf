@@ -3,10 +3,10 @@
 <robot name="mogi_bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <!-- STEP 5 - Gazebo plugin -->
-  <xacro:include filename="$(find bme_gazebo_sensors)/urdf/mogi_bot.gazebo" />
+  <xacro:include filename="$(find assign1)/urdf/mogi_bot.gazebo" />
 
   <!-- STEP 4 - RViz colors -->
-  <xacro:include filename="$(find bme_gazebo_sensors)/urdf/materials.xacro" />
+  <xacro:include filename="$(find assign1)/urdf/materials.xacro" />
 
   <!-- STEP 1 - Robot footprint -->
   <link name="base_footprint"></link>
@@ -41,7 +41,7 @@
     <visual name='base_link_visual'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <mesh filename="package://bme_gazebo_sensors/meshes/mogi_bot.dae" />
+        <mesh filename="package://assign1/meshes/mogi_bot.dae" />
       </geometry>
     </visual>
 
@@ -106,7 +106,7 @@
     <visual name='left_wheel_visual'>
       <origin xyz="0 0 0" rpy="0 1.5707 1.5707"/>
       <geometry>
-        <mesh filename = "package://bme_gazebo_sensors/meshes/wheel.dae"/>
+        <mesh filename = "package://assign1/meshes/wheel.dae"/>
       </geometry>
     </visual>
   </link>
@@ -141,7 +141,7 @@
     <visual name='right_wheel_visual'>
       <origin xyz="0 0 0" rpy="0 1.5707 1.5707"/>
       <geometry>
-        <mesh filename = "package://bme_gazebo_sensors/meshes/wheel.dae"/>
+        <mesh filename = "package://assign1/meshes/wheel.dae"/>
       </geometry>
     </visual>
   </link>
@@ -204,14 +204,16 @@
     <axis xyz="0 1 0" />
   </joint>
 
+  <link name="camera_link_optical">
+  </link>
+
   <joint type="fixed" name="camera_optical_joint">
     <origin xyz="0 0 0" rpy="-1.5707 0 -1.5707"/>
     <child link="camera_link_optical"/>
     <parent link="camera_link"/>
   </joint>
 
- <link name="camera_link_optical">
- </link>
+
 
   <joint name="imu_joint" type="fixed">
     <origin xyz="0 0 0" rpy="0 0 0" />
@@ -221,15 +223,15 @@
 
   <link name="imu_link">
   </link>
-
+  <link name="navsat_link">
+  </link>
   <joint name="navsat_joint" type="fixed">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <parent link="base_link"/>
     <child link="navsat_link" />
   </joint>
 
-  <link name="navsat_link">
-  </link>
+
 
 
 
@@ -261,7 +263,7 @@
     <visual name='scan_link_visual'>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry> <mesh filename =
-        "package://bme_gazebo_sensors/meshes/lidar.dae"/>
+        "package://assign1/meshes/lidar.dae"/>
       </geometry>
     </visual>
   </link>
