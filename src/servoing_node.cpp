@@ -50,7 +50,7 @@ public:
             50ms, std::bind(&ArucoMissionNode::control_loop, this));
 
         // Setup ArUco for Visualization
-        dictionary_ = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_6X6_250);
+        dictionary_ = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_ARUCO_ORIGINAL);
         parameters_ = cv::aruco::DetectorParameters::create();
 
         RCLCPP_INFO(this->get_logger(), "Mission Started. check the 'Robot View' window.");
@@ -132,7 +132,7 @@ private:
                         double error_yaw = -pos.x; 
                         double error_dist = pos.z - this->get_parameter("stop_distance").as_double();
 
-                        cmd.angular.z = 2.0 * error_yaw; 
+                        cmd.angular.z = 0.2 * error_yaw; 
 
                         if (std::abs(error_yaw) < 0.2) {
                             cmd.linear.x = std::min(0.5 * error_dist, 0.5);
