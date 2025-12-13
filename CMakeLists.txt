@@ -54,6 +54,7 @@ install(DIRECTORY
   urdf
   meshes
   config
+  aruco_boxes_models
   DESTINATION share/${PROJECT_NAME}
 )
 

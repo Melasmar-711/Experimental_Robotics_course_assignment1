@@ -77,21 +77,7 @@
       <pose>0 0 0 0 0 0</pose>
       <self_collide>false</self_collide>
     </model>
-    <include>
-      <uri>file:///home/asmar/gazebo_models/brick_box_3x1x3</uri>
-      <name>brick_box_3x1x3</name>
-      <pose>-0.5910934474239351 4.9313380762175445 0 0 0 0</pose>
-    </include>
-    <include>
-      <uri>file:///home/asmar/gazebo_models/brick_box_3x1x3</uri>
-      <name>brick_box_3x1x3_0</name>
-      <pose>2.6666111475691654 4.8302343770614558 0 0 0 0</pose>
-    </include>
-    <include>
-      <uri>file:///home/asmar/gazebo_models/rescue_randy</uri>
-      <name>rescue_randy</name>
-      <pose>1.5776795095953009 3.6022001529965531 0 0 0 0</pose>
-    </include>
+
 
     <include>
       <uri>file:///home/asmar/gazebo_models/aruco_box3</uri>
