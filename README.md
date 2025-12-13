@@ -88,3 +88,19 @@ change int the ros_aruco_opencv/aruco_opencv/config/aruco_tracker.yaml the camer
 ```bash 
 export ROS_DOMAIN_ID= <ROBOT_ID>
 ros2 launch assign1 aruco_rosbot_node
+```
+
+
+## Results 
+    ### Video Demonstrations
+
+    1. **Diff-Drive Robot**
+        [![Diff-Drive Robot Demo](https://img.youtube.com/vi/BdmpJK7gqIg /0.jpg)](https://www.youtube.com/watch?v=BdmpJK7gqIg )
+
+    2. **Skid-Steer Robot**
+        [![Skid-Steer Robot Demo](https://img.youtube.com/vi/TrPhyCAqjS8 /0.jpg)](https://www.youtube.com/watch?v=TrPhyCAqjS8 )
+
+    3. **RosBot**
+        [![RosBot Demo](https://img.youtube.com/vi/VIDEO_ID_3/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_3)
+
+   
