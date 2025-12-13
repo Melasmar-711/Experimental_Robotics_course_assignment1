@@ -169,7 +169,7 @@ def generate_launch_description():
         package='topic_tools', # Or a simple Python script if topic_tools is unavailable
         executable='relay',
         arguments=[
-            '/camera/camera_info',
+            '/camera/rgb/camera_info',
             '/aruco_tracker/camera_info',
             'sensor_msgs/msg/CameraInfo' 
         ],

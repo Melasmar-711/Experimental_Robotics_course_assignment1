@@ -84,16 +84,16 @@ private:
     void detection_callback(const aruco_opencv_msgs::msg::ArucoDetection::SharedPtr msg) {
         visible_markers_.clear();
         if (msg->markers.empty()) return;
-
+            
         for (const auto &marker : msg->markers) {
             int id = marker.marker_id; 
             visible_markers_[id] = marker.pose.position;
 
-            if (state_ == SCANNING) {
-                found_ids_.insert(id);
+                if (state_ == SCANNING) {
+                    found_ids_.insert(id);
+                }
             }
         }
-    }
 
     // ---------------------------------------------------------
     // 2. CONTROL LOOP (Movement)
@@ -137,7 +137,7 @@ private:
                         if (std::abs(error_yaw) < 0.2) {
                             cmd.linear.x = std::min(0.5 * error_dist, 0.5);
                         }
-
+                            
                         if (std::abs(error_dist) < 0.05) {
                              state_ = BACKING_UP;
                              backup_start_time_ = this->now();
@@ -157,7 +157,7 @@ private:
                     } else {
                         cmd.linear.x = 0;
                         current_target_idx_++; 
-                        state_ = NAVIGATING;   
+                        state_ = NAVIGATING;    
                     }
                 }
                 break;
