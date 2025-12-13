@@ -64,8 +64,8 @@ The robot subscribes to `/aruco_detections` (Pose) for control and `/camera/imag
 
 ### 1. Launch the Simulation
 Start your Gazebo world and the ArUco detector node.
-*Note: Ensure the ArUco detector is using the correct dictionary (e.g., `DICT_ARUCO_ORIGINAL`) to match the simulation models and the correct camera topic in the `ros_aruco_opencv/aruco_opencv/config/aruco_tracker.yaml *
-*Note : replace the `aruco_tracker.launch.xml` in the ros_aruco_opencv/aruco_opencv/launch with the one included in this pkg to ignore board detections 
+**Note**: Ensure the ArUco detector is using the correct dictionary (e.g., `DICT_ARUCO_ORIGINAL`) to match the simulation models and the correct camera topic in the `ros_aruco_opencv/aruco_opencv/config/aruco_tracker.yaml .
+**Note** : replace the `aruco_tracker.launch.xml` in the ros_aruco_opencv/aruco_opencv/launch with the one included in this pkg to ignore board detections 
 
 ```bash
 ros2 launch assign1 spawn_robot.launch.py
