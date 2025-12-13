@@ -46,10 +46,10 @@ The robot subscribes to `/aruco_detections` (Pose) for control and `/camera/imag
     ```
 
 2.  **Install dependencies:**
-    ```bash
-    rosdep install --from-paths src --ignore-src -r -y
-    git clone https://github.com/fictionlab/ros_aruco_opencv.git #if you don't already have it
-    ```
+    
+    `rosdep install --from-paths src --ignore-src -r -y`
+    `git clone https://github.com/fictionlab/ros_aruco_opencv.git #if you don't already have it`
+    
 
 3.  **Build the package:**
     ```bash
