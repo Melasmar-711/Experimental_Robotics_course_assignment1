@@ -1,5 +1,3 @@
-# Experimental_Robotics_course_assignment1
-SimpleArucoMarkerDetectionAndVisualServoing
 # Experimental Robotics Course - Assignment 1
 
 A ROS 2 package for a differential drive robot that autonomously detects, inventories, and navigates to ArUco markers in a specific sequence.
