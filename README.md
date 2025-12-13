@@ -92,15 +92,15 @@ ros2 launch assign1 aruco_rosbot_node
 
 
 ## Results 
-    ### Video Demonstrations
+### Video Demonstrations
 
-    1. **Diff-Drive Robot**
-        [![Diff-Drive Robot Demo](https://img.youtube.com/vi/BdmpJK7gqIg/0.jpg)](https://youtu.be/BdmpJK7gqIg )
+1. **Diff-Drive Robot**
+    [![Diff-Drive Robot Demo](https://img.youtube.com/vi/BdmpJK7gqIg/0.jpg)](https://youtu.be/BdmpJK7gqIg )
 
-    2. **Skid-Steer Robot**
-        [![Skid-Steer Robot Demo](https://img.youtube.com/vi/TrPhyCAqjS8/0.jpg)](https://youtu.be/TrPhyCAqjS8 )
+2. **Skid-Steer Robot**
+    [![Skid-Steer Robot Demo](https://img.youtube.com/vi/TrPhyCAqjS8/0.jpg)](https://youtu.be/TrPhyCAqjS8 )
 
-    3. **RosBot**
-        [![RosBot Demo](https://img.youtube.com/vi/VIDEO_ID_3/0.jpg)](https://youtu.be/VIDEO_ID_3)
+3. **RosBot**
+    [![RosBot Demo](https://img.youtube.com/vi/VIDEO_ID_3/0.jpg)](https://youtu.be/VIDEO_ID_3)
 
    
