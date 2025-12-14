@@ -1,0 +1,248 @@
+{
+  "repo_notes": [
+    {
+      "content": ""
+    }
+  ],
+  "pages": [
+    {
+      "title": "Overview",
+      "purpose": "Introduce the assign1 experimental robotics package, explaining its purpose as an autonomous ArUco marker navigation system using visual servoing",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Quick Start Guide",
+      "purpose": "Provide step-by-step instructions for building, installing dependencies, and launching the complete system",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "System Architecture",
+      "purpose": "Present the high-level architecture showing how simulation, perception, state estimation, and control layers interact",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Mission Control System",
+      "purpose": "Deep dive into the core ArUco mission node implementation - the primary contribution of this package",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Finite State Machine",
+      "purpose": "Explain the five-state FSM (SCANNING, SORTING, NAVIGATING, BACKING_UP, FINISHED) that orchestrates the mission",
+      "parent": "Mission Control System",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Visual Servoing Controller",
+      "purpose": "Detail the P-controller implementation for angular and linear velocity control during marker approach",
+      "parent": "Mission Control System",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Implementation Variants",
+      "purpose": "Compare the two node implementations: external detection vs. internal compressed image processing",
+      "parent": "Mission Control System",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Robot Models",
+      "purpose": "Document the two robot configurations available in the system with their kinematic and dynamic properties",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Differential Drive Robot",
+      "purpose": "Describe the mogi_bot differential drive configuration with URDF structure and Gazebo plugins",
+      "parent": "Robot Models",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Skid-Steer Drive Robot",
+      "purpose": "Describe the mogi_bot_skid_drive configuration with four-wheel drive and its unique characteristics",
+      "parent": "Robot Models",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Sensor Suite",
+      "purpose": "Detail the complete sensor configuration: camera, IMU, GPS/NavSat, and LiDAR with their parameters",
+      "parent": "Robot Models",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Launch System",
+      "purpose": "Explain the modular launch file architecture and how to start different system configurations",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Complete System Launch",
+      "purpose": "Document spawn_robot.launch.py and spawn_skid_steer_robot.launch.py for launching the full simulation environment",
+      "parent": "Launch System",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Component Launch Files",
+      "purpose": "Explain support launch files: my_launch.py for Gazebo, aruco_tracker.launch.xml for detection, and utilities",
+      "parent": "Launch System",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Launch Arguments and Configuration",
+      "purpose": "List all configurable launch arguments for world selection, robot spawning, visualization, and simulation time",
+      "parent": "Launch System",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Simulation Environment",
+      "purpose": "Describe the Gazebo world with ArUco markers and the custom model assets",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "World Definition",
+      "purpose": "Detail the assignment1.sdf world file including physics, lighting, and the five ArUco box placements",
+      "parent": "Simulation Environment",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "ArUco Box Models",
+      "purpose": "Document the custom ArUco box models with their marker IDs, textures, and SDF structure",
+      "parent": "Simulation Environment",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Configuration Files",
+      "purpose": "Document the YAML configuration files for EKF sensor fusion and ArUco detection parameters",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "ArUco Detector Settings",
+      "purpose": "Document the aruco_tracker configuration including dictionary selection and board detection settings",
+      "parent": "Configuration Files",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Build System and Dependencies",
+      "purpose": "Explain the CMake build configuration and ROS 2 package dependencies",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Package Dependencies",
+      "purpose": "List and explain all ROS 2 and external library dependencies required by the package",
+      "parent": "Build System and Dependencies",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "CMake Build Configuration",
+      "purpose": "Detail the CMakeLists.txt structure, compilation targets, and installation rules",
+      "parent": "Build System and Dependencies",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "ROS 2 Topic Interface",
+      "purpose": "Comprehensive reference of all topics published and subscribed by the only the nodes required for the visual servoing tasks without mention of the additional features that are not utilized yet",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Tuning and Parameters",
+      "purpose": "Guide for adjusting mission parameters: speeds, distances, gains, and detection thresholds",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    }
+  ]
+}
