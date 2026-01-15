@@ -80,27 +80,27 @@
 
 
     <include>
-      <uri>file:///home/asmar/gazebo_models/aruco_box3</uri>
+      <uri>model://aruco_box3</uri>
       <name>aruco_box3</name>
       <pose>0.72528847158345533 1.9918505070372672 0.24999921343504655 -0.072477735754357384 1.5707934033936586 -0.55910956256916677</pose>
     </include>
     <include>
-      <uri>file:///home/asmar/gazebo_models/aruco_box4</uri>
+      <uri>model://aruco_box4</uri>
       <name>aruco_box4</name>
       <pose>3.4044969081878662 -1.0823526382446289 0.24999901156305956 9.1541910691384752e-18 -3.8362629385103968e-17 2.0225401639450986</pose>
     </include>
     <include>
-      <uri>file:///home/asmar/gazebo_models/aruco_box1</uri>
+      <uri>model://aruco_box1</uri>
       <name>aruco_box1</name>
       <pose>2.6844999790192356 2.9321398755387751 0.2499993066060659 8.0553444022835039e-07 -2.7879660481638761e-11 -2.645489871724459e-07</pose>
     </include>
     <include>
-      <uri>file:///home/asmar/gazebo_models/aruco_box2</uri>
+      <uri>model://aruco_box2</uri>
       <name>aruco_box2</name>
       <pose>4.5637645721435547 1.2106193304061892 0.24999999995712521 -2.2652092445744133e-17 -3.2238560886343e-17 1.5953502891205253</pose>
     </include>
     <include>
-      <uri>file:///home/asmar/gazebo_models/aruco_box5</uri>
+      <uri>model://aruco_box5</uri>
       <name>aruco_box5</name>
       <pose>1.26033039566924 -0.37163250162541323 0.24999919734814685 1.5707933724403291 2.4293401124087193e-07 -0.54783376894256264</pose>
     </include>

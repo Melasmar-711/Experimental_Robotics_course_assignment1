@@ -38,6 +38,7 @@ add_executable(aruco_node src/servoing_node.cpp)
 #add_executable(aruco_rosbot_node src/Serviong_node_using_compressed_imgs.cpp)
 
 
+
 ament_target_dependencies(aruco_node
     rclcpp
     geometry_msgs
