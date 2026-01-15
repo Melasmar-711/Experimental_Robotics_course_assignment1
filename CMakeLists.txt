@@ -48,15 +48,15 @@ ament_target_dependencies(aruco_node
     aruco_opencv_msgs
 )
 
-ament_target_dependencies(aruco_rosbot_node
-    rclcpp
-    geometry_msgs
-    sensor_msgs
-    cv_bridge
-    image_transport
-    OpenCV
-    aruco_opencv_msgs
-)
+#ament_target_dependencies(aruco_rosbot_node
+#    rclcpp
+#    geometry_msgs
+#    sensor_msgs
+#    cv_bridge
+#    image_transport
+#    OpenCV
+#    aruco_opencv_msgs
+#)
 
 
 install(DIRECTORY
